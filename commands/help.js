@@ -12,7 +12,7 @@ module.exports.run = (client, message, args) => {
 .addField(lang.jeux,"`apextstats` , `brstats` , `fnstats` , `skin`")
 .addField(":tada: **Fun** →","`8ball` , `blague` , `joke`")
 .addField(":police_car: **Staff** →", "`eval`")
-.addField(":tools: **Utilitaires** →", "`calcul` , `meteo`"
+.addField(":tools: **Utilitaires** →", "`calcul` , `meteo`")
 .setTimestamp()
 .setFooter(message.author.username,message.author.avatarURL)
 message.channel.send(embed)
