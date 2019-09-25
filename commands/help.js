@@ -8,6 +8,7 @@ module.exports.run = (client, message, args) => {
 .setTitle(lang.title)
 .setThumbnail(client.user.avatarURL)
 .addField("📰 **Informations** →", "`help` , `serveurinfos`")
+.addField(":camping: **Images** →", "`glitch` , `blur` , `beautiful`")
 .addField(lang.jeux,"`apextstats` , `brstats` , `fnstats` , `skin`")
 .addField(":tada: **Fun** →","`blague` , `joke`")
 .addField(":police_car: **Staff** →", "`eval`")
