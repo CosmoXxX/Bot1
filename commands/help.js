@@ -7,7 +7,7 @@ module.exports.run = (client, message, args) => {
 .setColor('0040ff')
 .setTitle(lang.title)
 .setThumbnail(client.user.avatarURL)
-.addField("📰 **Informations** →", "-`help` , `serveurinfos`")
+.addField("📰 **Informations** →", "-`channelinfos` , `help` , `serveurinfos`")
 .addField(":camping: **Images** →", "-`beautiful` , `blur` , `glitch`")
 .addField(lang.jeux,"-`apextstats` , `brstats` , `fnstats` , `skin`")
 .addField(":tada: **Fun** →","-`8ball` , `blague` , `joke`")
