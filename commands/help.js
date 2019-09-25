@@ -8,10 +8,11 @@ module.exports.run = (client, message, args) => {
 .setTitle(lang.title)
 .setThumbnail(client.user.avatarURL)
 .addField("📰 **Informations** →", "`help` , `serveurinfos`")
-.addField(":camping: **Images** →", "`glitch` , `blur` , `beautiful`")
+.addField(":camping: **Images** →", "`beautiful` , `blur` , `glitch`")
 .addField(lang.jeux,"`apextstats` , `brstats` , `fnstats` , `skin`")
-.addField(":tada: **Fun** →","`blague` , `joke`")
+.addField(":tada: **Fun** →","`8ball` , `blague` , `joke`")
 .addField(":police_car: **Staff** →", "`eval`")
+.addField(":tools: **Utilitaires** →", "`calcul` , `meteo`"
 .setTimestamp()
 .setFooter(message.author.username,message.author.avatarURL)
 message.channel.send(embed)
