@@ -1,4 +1,9 @@
-module.exports.run = (client, message, args) => {
+module.exports = {
+    name: "apexstats",
+    category: ":video_game: **Jeux**",
+    description: "Affiche les stats apex d'un joueur.",
+    usage: "*apexstats <platform> <pseudo>",
+    run: async (client, message, args) => {
     const plat = args[0]
     const username = args[1]
     const Apex = require('apex-api');
@@ -24,7 +29,4 @@ module.exports.run = (client, message, args) => {
      }
     });
      }
-    module.exports.config = {
-        name: "apexstats",
-        aliases: []
-    }
+    
