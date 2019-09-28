@@ -1,14 +1,14 @@
 const botconfig = require('./botconfig.json');
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const { Client , Collection } = require('discord.js');
+const client = new Client();
 
 client.on("ready", async () => {
-    console.log(`${client.user.username} is now Active!`);
-    client.user.setActivity('With Discord!');
+    console.log(`${client.user.username} est prêt!`);
+    client.user.setActivity("*help");
 })
 
 const fs = require('fs');
-client.commands = new Discord.Collection();
+client.commands = new Collection();
 
 fs.readdir("./commands/", (err, files) => {
     if(err) console.log(err);
